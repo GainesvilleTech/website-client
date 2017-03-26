@@ -34,8 +34,8 @@ body {
 
 #cta .addthis_inline_follow_toolbox {
     position: absolute;
-    top: 20px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    margin-top: 50px;
 }
