@@ -3,10 +3,6 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: transparent url("../img/background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
 }
 
 body {
@@ -14,7 +10,23 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, .8)
+  background: transparent url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+body.startup-talks {
+  background-image: url("http://startuptalks.org/img/hero.jpg");
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 #cta {
@@ -55,6 +67,6 @@ body {
 .tito-wrapper {
   border: 1px solid #000;
   background: rgba(0,0,0,0.5);
-  font-family: sans-serif;
   color: #fff;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
