@@ -8,7 +8,7 @@
 
   <title>Gainesville Tech - Startup Talks</title>
   <meta name="description" content="Your guide to the Gainesville, FL tech and creative community.">
-  <meta name="author" content="GainesvilleTech.org">
+  <meta name="author" content="Starter Space / GainesvilleTech.org">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Starter Space and Gainesville Tech present Startup Talks">
@@ -51,8 +51,20 @@
         <div class="content">
           <img src="../public/img/startup-talks-logo.png" class="img-responsive logo" alt="Startup Talks" />
           <tito-widget event="gainesville-tech/startup-talks-abhi-lokesh"></tito-widget>
+          <button id="open-popup" class="btn btn-default">Subscribe</button>
         </div>
     </div>
   </header>
+
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js"
+    data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script>
+    function showMailingPopUp() {
+      require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"94f9d7164536018291a2542c9","lid":"e692f48b3b"}) })
+      document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+  </script>
 </body>
 </html>
