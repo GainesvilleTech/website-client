@@ -1,47 +1,60 @@
-html { 
-    height:100%; 
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: transparent url("../img/background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 0, 0, .8)
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .8)
 }
 
 #cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50%;
 }
 
-#cta .logo {
-    width: 80%;
-    margin: 0 auto;
+#cta .logo, #cta .content {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #cta .addthis_inline_follow_toolbox {
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
 }
 
-@media (min-width: 768px) { 
-    #cta {
-        width: 50%;
-    }
+@media (min-width: 768px) {
+  #cta {
+      width: 50%;
+  }
+}
+
+/* Startup Talks styles */
+#cta img.logo {
+  margin: 0 auto;
+}
+
+/* ti.to styles */
+.tito-wrapper {
+  border: 1px solid #000;
+  background: rgba(0,0,0,0.5);
+  font-family: sans-serif;
+  color: #fff;
 }
