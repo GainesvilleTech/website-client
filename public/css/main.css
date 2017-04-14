@@ -63,17 +63,13 @@ header:after {
 
 #cta {
   text-align: center;
-  width: 80%;
+  width: 70%;
   z-index: 1;
-}
-
-#cta .logo, #cta .content {
-  width: 80%;
-  margin: 0 auto;
 }
 
 #cta .addthis_inline_follow_toolbox {
   display: inline-block;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
