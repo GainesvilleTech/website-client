@@ -1,24 +1,15 @@
 html {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
-  background: transparent url("../img/background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-
-body.startup-talks {
-  background-image: url("http://startuptalks.org/img/hero.jpg");
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -45,21 +36,35 @@ nav button:hover {
 }
 
 header {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+  background: transparent url("../img/background.jpg") no-repeat center center scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, .8);
 }
 
 #cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
   width: 80%;
-  height: 50%;
+  z-index: 1;
 }
 
 #cta .logo, #cta .content {
@@ -68,28 +73,11 @@ header {
 }
 
 #cta .addthis_inline_follow_toolbox {
-  position: absolute;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin-top: 50px;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   #cta {
       width: 50%;
   }
-}
-
-/* Startup Talks styles */
-#cta img.logo {
-  margin: 0 auto;
-}
-
-/* ti.to styles */
-.tito-wrapper {
-  border: 1px solid #000;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
