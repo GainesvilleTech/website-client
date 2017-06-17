@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Lean Canvas</title>
+  <meta name="description" content="Lean Canvas">
+  <meta name="author" content="@aaronbdixon">
+
+  <!--<link rel="icon" href="/public/img/favicon.png">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
+  <link rel="stylesheet" href="/public/css/leancanvas.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <main>
+    <div class="ui padded grid">
+      <div class="two column row header">
+        <div class="column">
+          Lean Canvas
+        </div>
+        <div class="column">
+
+        </div>
+      </div>
+      <div class="five column row">
+        <div class="column">
+          <div class="section">
+            <div class="ui teal label">2</div>
+            <span>Problem</span>
+          </div>
+          <div class="section">
+            <span>Existing Alternatives</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section">
+            <div class="ui teal label">4</div>
+            <span>Solution</span>
+          </div>
+          <div class="section">
+            <div class="ui teal label">7</div>
+            <span>Key Metrics</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section">
+            <div class="ui teal label">5</div>
+            <span>Unique Value Proposition</span>
+          </div>
+          <div class="section">
+            <span>High Level Concept</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section">
+            <div class="ui teal label">9</div>
+            <span>Unfair Advantage</span>
+          </div>
+          <div class="section">
+            <div class="ui teal label">6</div>
+            <span>Channels</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="section">
+            <div class="ui teal label">1</div>
+            <span>Early Adopters</span>
+          </div>
+          <div class="section">
+            <span>Customer Segments</span>
+          </div>
+        </div>
+      </div>
+      <div class="two column row">
+        <div class="column">
+          <div class="ui teal label">8</div>
+          <span>Cost Structure</span>
+        </div>
+        <div class="column">
+          <div class="ui teal label">3</div>
+          <span>Revenue Stream</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" charset="utf-8"></script>
+  <script>
+  $('.section .label')
+    .popup({
+      on: 'click',
+      content: 'Explain the section here'
+    });
+  </script>
+</body>
+</html>

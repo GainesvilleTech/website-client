@@ -1,0 +1,63 @@
+html {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ui.grid>.row {
+  padding: 0;
+}
+
+.row.five {
+  height: 70vh;
+}
+
+.row.two {
+  height: 20vh;
+}
+
+.row.two.header {
+  height: 10vh;
+}
+
+.row.two .column {
+  background: #ccc;
+}
+
+.row .column {
+  padding: 0 !important;
+}
+
+.row .column .section {
+  height: 50%;
+  position: relative;
+}
+
+.row .column .label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;ß
+}
+
+.row .column span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
