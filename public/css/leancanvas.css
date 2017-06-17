@@ -41,12 +41,14 @@ main {
 }
 
 .row .column {
-  padding: 0 !important;
+  padding: 10px !important;
 }
 
 .row .column .section {
   height: 50%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .row .column .label {
@@ -60,4 +62,17 @@ main {
   position: absolute;
   left: 10px;
   top: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.content:read-write:focus {
+     outline: none;
+}
+
+.content {
+  overflow: scroll;
+  flex: 1;
 }
